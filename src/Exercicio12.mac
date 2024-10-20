@@ -7,7 +7,7 @@ MCO	;
 	Set oInstrutor.Matricula="Intersystems-001"
 	Set sc=oInstrutor.%Save(1)
 	;
-	;
+	Set ok=1
 	;
 MCOZ	Quit
 	;
