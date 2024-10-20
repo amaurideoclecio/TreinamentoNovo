@@ -1,0 +1,13 @@
+ROUTINE Exercicio12
+Exercicio12	; Cadastra Instrutor
+	;
+MCO	;
+	Set oInstrutor=##class(Treinamento.Data.Intrutor).%New()
+	Set oInstrutor.Nome="Clayton"
+	Set oInstrutor.Matricula="Intersystems-001"
+	Set sc=oInstrutor.%Save(1)
+	;
+	;
+	;
+MCOZ	Quit
+	;

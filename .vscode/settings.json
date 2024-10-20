@@ -1,0 +1,14 @@
+{
+    "objectscript.conn": {
+        "active": true,
+        "host": "localhost",
+        "port": 52773,
+        "username": "",
+        "password": "",
+        "ns": "TREINAMENTO",
+        "https": false
+    },
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never"
+  }
