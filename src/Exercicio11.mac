@@ -1,0 +1,15 @@
+ROUTINE Exercicio11
+MCO ;
+    ;
+    ;Novo
+    ;
+    Set oCurso=##class(Treinamento.Data.Curso).%New()
+    Set oCurso.Nome="Curso IRIS"
+    Set oCurso.Duracao="98"
+    Set oCurso.Preco=2800.00
+    Set sc=oCurso.%Save(1)
+    Write !,$S(sc:"Curso cadastrado com sucesso",1:"Erro na gravação"_sc)
+    ;
+    Set ok=1
+    ;
+MCOZ    Quit
