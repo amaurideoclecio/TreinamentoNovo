@@ -1,0 +1,18 @@
+ROUTINE Exercicio10
+Exercicio10 ; AMAURID - 19/10/2024
+MCO ;
+    ;
+    Set sql="SELECT * From Treinamento_Data.Aluno"
+    Set rs=##class(%SQL.Statement).%New()
+    Set sc=rs.%Prepare(sql)
+    Set sr=rs.%Execute()
+	If sr.%Next()
+	
+    Set oAluno=##class(Treinamento.Data.Aluno).%New()
+    Set oAluno.Nome="Amauri"
+    Set oAluno.Idade=55
+    Set oAluno.Matricula="MAT-001"
+    Set sc=oAluno.%Save(1)
+    Write !,$S(sc=1:"Salvo com sucesso",1:"Ocorreu erro."_sc)
+    ;
+MCOZ    Quit
